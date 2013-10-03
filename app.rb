@@ -36,8 +36,9 @@ enable :sessions
 
 
 get '/' do
-	erb :index
-	# redirect to('/auth/:facebook')
+
+	erb :login
+
 end
 
 post '/' do
