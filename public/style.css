@@ -1,0 +1,21 @@
+body {
+	background-image:url('images/Vineyard_background.jpg');
+}
+
+#title {
+	  text-align: center;
+}
+
+#sign-in_box {
+	text-align: center;
+	text-fo
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 10%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #D2B48C;
+	min-width: 250px;
+}
