@@ -27,6 +27,11 @@ post '/' do
 	end
 end
 
+get '/winery_list' do
+	@winery_list = Winery.all
+	erb :winery_list
+end
+
 get '/home' do
 	@user = session[:user]
 	p @user.inspect
