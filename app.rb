@@ -8,7 +8,7 @@ set :database, 'postgres://localhost/wineanddash'
 enable :sessions
 
 get '/' do
-	erb :index
+	erb :login
 end
 
 post '/' do
