@@ -1,11 +1,46 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'omniauth'
 
 require './user' 
 require './winery' 
 set :database, 'postgres://localhost/wineanddash'
 
 enable :sessions
+
+class MyApplication < Sinatra::Base
+  use Rack::Session::Cookie
+  use OmniAuth::Strategies::Facebook
+end
+
+post '/' do
+	#after login
+	redirect to('/auth/:facebook')
+end
+
+get '/auth/:facebook/callback' do
+	redirect to('/home')
+end
+
+class SessionsController < ApplicationController
+  def create
+    @user = User.find_or_create_from_auth_hash(auth_hash)
+    self.current_user = @user
+    redirect_to '/'
+  end
+
+  protected
+
+  def auth_hash
+    request.env['omniauth.auth']
+  end
+end
+
+
+
+
+
+
 
 get '/' do
 	erb :index
