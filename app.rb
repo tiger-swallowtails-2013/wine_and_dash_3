@@ -49,7 +49,7 @@ post '/' do
 	if user = User.authenticate(username,password)
 		session[:user] = user
 		p session[:user].inspect
-		redirect to('/home')
+		redirect to('/winery_list')
 	else 
 		redirect to('/')
 	end
