@@ -1,7 +1,8 @@
+<link rel="stylesheet" type="text/css" href="normalize.css">
 
 <% @winery_list.each do |winery| %>
 
-<div id = "winery">
+<div id = "winery" style="background=red">
 		<h2><%= winery.name%></h2>
 			<p><%= winery.address%></p>
 			<p><a href='<%= winery.url%>'><%= winery.url%></a></p>
