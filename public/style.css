@@ -25,12 +25,16 @@ body {
 	background-color: white;
 	border-radius: 10px;	
 		background-color: rgba(255, 255, 255, 0.4);
-		margin-left: 5%;
-		padding-left: 10px;
-		width: 40%;
+		margin-left: 10px;
+		/*padding-left: 10px;*/
+		width: 500px;
 
 }
 
-
-
+#map-canvas { 
+	height: 500px; 
+	width: 600px;
+	float: right;
+	margin-right: 10px;
+}
 

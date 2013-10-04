@@ -1,3 +1,4 @@
+
 function initialize() {
 
  var locations = [
