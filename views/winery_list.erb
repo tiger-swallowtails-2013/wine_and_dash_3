@@ -42,6 +42,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div id = "winery">
 		<h2><%= winery.name%></h2>
 			<p><%= winery.address%></p>
-			<p><%= winery.url%></p>
+			<p><a href='<%= winery.url%>'><%= winery.url%></a></p>
 </div>
 <% end %>
