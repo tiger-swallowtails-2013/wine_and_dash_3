@@ -1,4 +1,10 @@
+html { height: 100%;
+}
+
 body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	background-image:url('images/Vineyard_background.jpg');
 }
 
@@ -24,13 +30,12 @@ body {
 	font-family: Arial;
 	background-color: white;
 	border-radius: 10px;	
-		background-color: rgba(255, 255, 255, 0.4);
-		margin-left: 5%;
-		padding-left: 10px;
-		width: 40%;
-
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 
-
+#map-canvas { 
+	height: 80%;
+	width: 80%;
+}
 
