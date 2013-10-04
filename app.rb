@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-# require 'omniauth-facebook'
+require 'omniauth-facebook'
 
 require './user' 
 require './winery' 
@@ -15,7 +15,7 @@ enable :sessions
 
 
 # get '/auth/:facebook/callback' do
-# 	redirect to('/home')
+#   redirect to('/home')
 # end
 
 # class SessionsController < ApplicationController
@@ -33,13 +33,11 @@ enable :sessions
 # end
 
 
-
-
 get '/' do
-
-	erb :login
-
+	erb :index
+	# redirect '/auth/facebook'
 end
+
 
 post '/' do
 
