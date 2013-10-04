@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="normalize.css">
 
 
 <script type="text/javascript"
@@ -39,7 +40,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div id="map-canvas"></div>
 <% @winery_list.each do |winery| %>
 
-<div id = "winery">
+<div id = "winery" style="background=red">
 		<h2><%= winery.name%></h2>
 			<p><%= winery.address%></p>
 			<p><a href='<%= winery.url%>'><%= winery.url%></a></p>
