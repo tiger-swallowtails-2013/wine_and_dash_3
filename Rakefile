@@ -10,4 +10,6 @@ namespace :data do
       winery = Winery.create(name: row[0], url: row[1], address: row[2])
     end
   end
+
+  
 end

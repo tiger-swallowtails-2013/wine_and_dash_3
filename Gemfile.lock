@@ -23,6 +23,7 @@ GEM
     diff-lcs (1.2.4)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
+    geocoder (1.1.8)
     hashie (2.0.5)
     httpauth (0.2.0)
     i18n (0.6.5)
@@ -88,6 +89,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  geocoder
   omniauth-facebook
   pg
   rspec

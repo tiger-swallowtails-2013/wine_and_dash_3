@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'omniauth-facebook'
+require 'geocoder'
 
 require './user' 
 require './winery' 
